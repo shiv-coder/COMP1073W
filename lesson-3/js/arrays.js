@@ -51,7 +51,12 @@ console.log(myArrayEmpty.pop());
 // pop() returns the item that was removed, rather than the length of the updated array, so…
 
 // To do the same thing, that is, to add and remove an item from the beginning of the array, use shift() and unshift()
+origSevenLength = origFiveArray.unshift('Buffalo Sabres');
+output.textContent = origSevenLength;
+output.textContent = origFiveArray;
 
+output.textContent = origFiveArray.shift();
+output.textContent = origFiveArray;
 // We can also modify the array contents by deleting or substituting elements, or inserting one or more elements at a certain place with splice()
 
 /* That's it for the basics of working with arrays! With these tools at your disposal, a whole new world of possibilities with JavaScript are at your command */
