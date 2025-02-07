@@ -3,7 +3,15 @@ let courseList = 'My courses this term are ';
 const msg = document.querySelector('#courses');
 /* STEP 1a: A simple FOR loop
 A simple loop of this structure needs an initializer (counter variable), an exit conditional, and and incrementor/decrementor */
+for(let i=0; i<courses.length;i++){
+	if( i === courses.length-1){
+		courseList += ` and ${courses[i]}.`;
+	}
+	else{
+		courseList += `${courses[i]}, `;
+	}
 
+}
 msg.textContent = courseList;
 // STEP 1b: Add a conditional for the last item in the array so we can finish the sentence with a period.
 
@@ -18,9 +26,16 @@ btn.addEventListener('click', function() {
 	input.value = '';
 	input.focus();
 	/* STEP 2a: Create a FOR loop to iterate through the cities array */
-
-		/* STEP 2b: Build an IF/ELSE conditional that compares searchName with cities[i] */
-
+	/* STEP 2b: Build an IF/ELSE conditional that compares searchName with cities[i] */
+	for(let i=0;i<cities.length;i++){
+		console.log(cities[i]);
+		if(searchName === cities[i]){
+			result.textContent = `${searchName} is in the list of cities`;
+			break;
+		}else{
+			result.textContent = `${searchName} The city you typed is not in the list of cities`;
+		}
+	}	
 });
 
 
