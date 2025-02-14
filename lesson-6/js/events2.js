@@ -28,6 +28,14 @@ const para = document.querySelector('#formErrors');
 
 /* STEP 2b: Create a script to capture the onsubmit event using preventDefault() */
 
+form.addEventListener('submit',function(event){
+    if(email.value === ''){
+        event.preventDefault();
+        console.log(event.type);
+        para.textContent = 'You forgot to provide an email address';
+    }
+})
+
 // Next, open up gallery.html...
 
 // This page inspired by and adapted from https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events
