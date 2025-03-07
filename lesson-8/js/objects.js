@@ -1,7 +1,15 @@
 const output = document.getElementById('output');
 
 /* STEP 1: Create an object (looks a lot like declaring a variable, but with empty braces), then open this page in a browser and enter 'person' in the console */
-const person = {};
+const person = {
+    name:{
+        first:"Shivi",
+        last:"Dhaka"
+    },
+    age:30,
+    gender:"female",
+    interests:["camping","swimming","shopping"]
+};
 
 /* STEP 2a: Add other data items to the above object, like name, age, gender, and interests */
 
