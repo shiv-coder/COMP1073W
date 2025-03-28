@@ -29,7 +29,7 @@ function fetchResults(event) {
         {
             url +=`&begin_date=${start.replace(/-/g,'')}`;
         }
-
+//strat=2023-01-01=>20230101
     if(end){
         url+=`&end_date=${end.replace(/-/g,'')}`;
     }
