@@ -25,6 +25,14 @@ function fetchResults(event) {
     // STEP 3: Assemble the full URL, according to the API documentation at the New York Times
     url = `${baseURL}?api-key=${key}&q=${searchTerm.value}&fq=document_type:("article")`;
 
+    if(start)
+        {
+            url +=``;
+        }
+
+    if(end){
+        url+=``;
+    }
     // STEP 4: Use fetch() to pass the URL that we built as a request to the API service, then pass the JSON to the displayResults() function
     fetch(url)
     .then(result =>{return result.json()})
