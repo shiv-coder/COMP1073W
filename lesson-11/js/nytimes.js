@@ -27,11 +27,11 @@ function fetchResults(event) {
 
     if(start)
         {
-            url +=``;
+            url +=`&begin_date=${start.replace(/-/g,'')}`;
         }
 
     if(end){
-        url+=``;
+        url+=`&end_date=${end.replace(/-/g,'')}`;
     }
     // STEP 4: Use fetch() to pass the URL that we built as a request to the API service, then pass the JSON to the displayResults() function
     fetch(url)
