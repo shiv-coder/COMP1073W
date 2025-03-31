@@ -6,7 +6,7 @@ const poemDisplay = document.querySelector('pre');
 verseChoose.addEventListener('change',function(){
     let verse = verseChoose.value;
     updateDisplay(verse);
-})
+});
 
 // STEP 3: Construct updateDisplay() function
 function updateDisplay(verse){
